@@ -26,7 +26,7 @@
     align-items: center;
     gap: 15px;
     padding: 50px 0 30px 0;
-    border-bottom: #020929;
+    border-bottom: 1px solid rgb(223, 222, 222);
   }
   
   .text-editor button {
@@ -83,14 +83,14 @@
 
   /* --- Text input --- */
   .text-editor #title-input {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 35px;
     outline: none;
     font-weight: 600;
   }
 
   .text-editor #text-input {
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 17px;
     outline: none;
     line-height: 30px;
@@ -101,7 +101,7 @@
     padding-top: 20px;
   }
 
-  .text-editor #text-input div span {
+  .text-editor #text-input span {
     padding: 3px 1px;
     border-radius: 3px;
   }
@@ -148,8 +148,14 @@
   }
 
   /* --- Insert Image --- */
+  .text-editor .insert-image-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+  }
+
   .text-editor .insertImageIcon {
-    margin-right: -42px;
+    margin-right: -25px;
     font-size: 21px;
   }
 
@@ -159,4 +165,31 @@
     background-color: #f1a0a000;
     width: 30px;
     cursor: pointer;
+  }
+
+
+  /* -- For mobile --- */
+
+  @media (max-width: 576px) {
+    .text-editor {
+        padding: 0 10px;
+    }
+
+    .text-editor .options {
+        padding: 25px 0 10px 0;
+    }
+
+    .text-editor .input-wrapper label {
+        font-size: 16px;
+    }
+
+    .text-editor input[type="color"] {
+        width: 43px;
+        height: 27px;
+    }
+
+    .text-editor #text-input {
+        margin-top: 20px;
+    }
+
   }
