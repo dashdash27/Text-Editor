@@ -70,10 +70,12 @@
           </button>
 
          <!--- Add image-->
-         <div class="insertImageIcon">
-            <i class="fa-solid fa-image"></i>
-        </div>
-        <input type="file" id="insertImage" class="option-button" accept="image/png, image/jpeg" onchange="readURL(this)"/>
+         <div class="insert-image-wrapper">
+            <div class="insertImageIcon">
+                <i class="fa-solid fa-image"></i>
+            </div>
+            <input type="file" id="insertImage" class="option-button" accept="image/png, image/jpeg" onchange="readURL(this)"/>
+         </div>
         
         <!-- Undo/Redo -->
         <button id="undo" class="option-button">
@@ -92,13 +94,13 @@
 
         <!-- Color -->
         <div class="input-wrapper">
-          <input type="color" id="foreColor" class="adv-option-button" />
-          <label for="foreColor">Font Color</label>
-        </div>
-        <div class="input-wrapper">
           <input type="color" id="backColor" class="adv-option-button" />
           <label for="backColor">Highlight Color</label>
         </div>
+        <div class="input-wrapper">
+            <input type="color" id="foreColor" class="adv-option-button" />
+            <label for="foreColor">Font Color</label>
+          </div>
 
         
       </div>
