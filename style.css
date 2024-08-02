@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: sans-serif;
+  }
+
+  .text-editor {
+    background-color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 30px;
+    border-radius: 10px;
+  }
+
+  .text-editor .options {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 50px 0 30px 0;
+    border-bottom: #020929;
+  }
+  
+  .text-editor button {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+    color: #020929;
+    cursor: pointer;
+  }
+
+  .text-editor select {
+    padding: 0px 5px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .text-editor .options label,
+  .text-editor .options select {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .text-editor .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 30px;
+  }
+
+  .text-editor input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 40px;
+    height: 27px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .text-editor input[type="color"]::-webkit-color-swatch {
+    border-radius: 18px;
+  }
+
+  .text-editor input[type="color"]::-moz-color-swatch {
+    border-radius: 15px;
+  }
+
+  /* --- Text input --- */
+  .text-editor #title-input {
+    margin-top: 20px;
+    font-size: 35px;
+    outline: none;
+    font-weight: 600;
+  }
+
+  .text-editor #text-input {
+    margin-top: 40px;
+    font-size: 17px;
+    outline: none;
+    line-height: 30px;
+    min-height: 500px;
+  }
+
+  .text-editor #text-input div {
+    padding-top: 20px;
+  }
+
+  .text-editor #text-input div span {
+    padding: 3px 1px;
+    border-radius: 3px;
+  }
+
+ /* --- Lists --- */
+  .text-editor #text-input ul {
+    margin-left: 30px;
+    margin-top: -20px;
+  }
+
+  .text-editor #text-input ol {
+    margin-left: 35px;
+    margin-top: -17px;
+  }
+
+  .text-editor #text-input li {
+    margin-top: 5px;
+  }
+
+   /* --- Images --- */
+  .text-editor #text-input img {
+    height: 250px;
+    border-radius: 3px;
+  }
+
+  /* --- Headings --- */
+  .text-editor #text-input h2 {
+    font-size: 26px;
+    margin: 20px 0 10px 0;
+  }
+
+  .text-editor #text-input h3 {
+    font-size: 22px;
+    margin: 20px 0 10px 0;
+  }
+
+  .text-editor #text-input h4 {
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+  }
+
+  .text-editor .active {
+    background-color: #e0e9ff;
+  }
+
+  /* --- Insert Image --- */
+  .text-editor .insertImageIcon {
+    margin-right: -42px;
+    font-size: 21px;
+  }
+
+  .text-editor #insertImage {
+    height: 30px;
+    padding-left: 30px;
+    background-color: #f1a0a000;
+    width: 30px;
+    cursor: pointer;
+  }
