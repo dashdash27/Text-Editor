@@ -125,6 +125,7 @@
   .text-editor #text-input img {
     height: 250px;
     border-radius: 3px;
+    max-width: 100%;
   }
 
   /* --- Headings --- */
